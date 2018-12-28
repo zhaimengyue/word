@@ -13,14 +13,16 @@ public class WordContentFragment extends Fragment {
         view=inflater.inflate( R.layout.word_content_frag,container,false );
         return view;
     }
-    public void refresh(String wordTitle,String wordName,String wordContent){
+    public void refresh(String wordTitle,String wordName,String wordContent,String update){
         View visibilityLayout=view.findViewById( R.id.visibility_layout );
         visibilityLayout.setVisibility( View.VISIBLE );
-        TextView wordTitleText=view.findViewById( R.id.word_title);
-        TextView wordNameText=view.findViewById( R.id.word_name );
-        TextView wordContentText=view.findViewById( R.id.word_content );
+        TextView wordTitleText=view.findViewById( R.id.word_name);
+        TextView wordNameText=view.findViewById( R.id.word_meaning );
+        TextView wordContentText=view.findViewById( R.id.word_sample );
+        TextView wordupdateText=view.findViewById( R.id.word_update );
         wordTitleText.setText( wordTitle );
         wordNameText.setText( wordName );
         wordContentText.setText( wordContent );
+        wordupdateText.setText( update );
     }
 }

@@ -1,14 +1,19 @@
 package com.example.cly.word;
 
-public class Word {
-    String title;
+import java.io.Serializable;
+
+public class Word implements Serializable {
+    int id;
     String name;
-    String content;
-    public String getTitle(){
-        return title;
+    String meaning;
+    String sample;
+    String update;
+    String collect;
+    public int getId(){
+        return id;
     }
-    public void setTitle(String title){
-        this.title=title;
+    public void setId(int id){
+        this.id=id;
     }
     public String getName(){
         return name;
@@ -16,10 +21,28 @@ public class Word {
     public void setName(String name){
         this.name=name;
     }
-    public String getContent(){
-        return content;
+    public String getMeaning(){
+        return meaning;
     }
-    public void setContent(String content){
-        this.content=content;
+    public void setMeaning(String meaning){
+        this.meaning=meaning;
+    }
+    public String getSample(){
+        return sample;
+    }
+    public void setSample(String sample){
+        this.sample=sample;
+    }
+    public String getUpdate(){
+        return update;
+    }
+    public void setUpdate(String update){
+        this.update=update;
+    }
+    public String getCollect(){
+        return collect;
+    }
+    public void setCollect(String collect){
+        this.collect=collect;
     }
 }

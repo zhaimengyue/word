@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
     <fragment
         android:id="@+id/word_title_fragment"
-        android:name="com.example.cly.word.WordTitleFragment"
+        android:name="com.example.cly.word.WordNameFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </FrameLayout>
